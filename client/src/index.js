@@ -1,17 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./app";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+// This is the only file that index.js should import
+import App from './App.jsx'; 
 
-// Optional global styles
-import "./index.css";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
